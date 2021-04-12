@@ -1,6 +1,8 @@
 name: codacy-coverage-reporter
 
 on:
+  pull_request:	 
+    branches: [ master ]
   pull_request_target:
     types: [labeled]
 
