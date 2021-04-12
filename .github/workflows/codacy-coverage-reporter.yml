@@ -24,7 +24,7 @@ jobs:
         run: mvn cobertura:check
       - name: cobertura xml
         run: mvn cobertura:cobertura -Dcobertura.report.format=xml
-      - name: cenas
+      - name: cenasa
         run: echo ${{github.event.pull_request}}
       - name: Codacy Coverage Reporter
         uses: codacy/codacy-coverage-reporter-action@0.2.0
